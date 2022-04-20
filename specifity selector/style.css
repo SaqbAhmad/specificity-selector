@@ -1,0 +1,30 @@
+/* Element selector */
+h1{
+    color:red;
+}
+/* Id selector*/
+#heading{
+     color:blue;
+}
+/* class selector*/
+.top-heading{
+    color:orange;
+}
+/* if agar selectivity same hai to changes last wale ke according honge csss me.*/
+/* Section ke children pr border nhi a raha hai. b/c some properties are
+  inheritable some are not */
+section{
+      color:black;
+      /* border inherit nhi hua hai */
+      border-top:5px solid blue;
+      font-size: 50px;
+}    
+/* By default border don't support border top yha hm forcefully inheritance kra rhe.. Unorder list
+   ke uper forcefully border ko inherit kra rahe hai. fir use li pr inherit kra rahe hai. */
+ul{
+     border-top: inherit;
+}
+li{
+    border-top: inherit;
+    color: initial;
+}
